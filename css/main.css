@@ -190,6 +190,33 @@ body {
           transform: scaleY(1);
 }
 
+@-webkit-keyframes navItemAnimation {
+  from {
+    -webkit-transform: translateX(200%);
+            transform: translateX(200%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes navItemAnimation {
+  from {
+    -webkit-transform: translateX(200%);
+            transform: translateX(200%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.nav-item-animation {
+  -webkit-animation: navItemAnimation 1s both;
+          animation: navItemAnimation 1s both;
+}
+
 .header {
   position: relative;
   display: -webkit-box;

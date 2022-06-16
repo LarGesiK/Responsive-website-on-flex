@@ -10,6 +10,18 @@ const handleNav = () => {
             nav.classList.remove('nav--active')
         })
     })
+
+    handleNavItemAnimation();
+}
+
+const handleNavItemAnimation = () => {
+    let delayTime = 0;
+
+    allNavItems.forEach(item => {
+        item.classList.toggle('nav-item-animation')
+        item.style.animationDelay = '.' + delayTime + 's';
+        delayTime++;
+    })
 }
 
 navBtn.addEventListener('click', handleNav)

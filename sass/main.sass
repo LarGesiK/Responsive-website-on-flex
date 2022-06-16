@@ -17,8 +17,6 @@ body
     font-family: 'Open Sans', sans-serif
     font-size: 1.6rem
 
-// NAV 
-
 .burger-btn
     position: fixed
     top: 20px
@@ -62,6 +60,8 @@ body
             width: 30%  
             transition-delay: .1s   
 
+// NAV 
+
 .nav
     position: fixed
     top: 0
@@ -99,8 +99,17 @@ body
             content: '' 
 
         &:hover::before
-            transform: scaleY(1)                      
+            transform: scaleY(1)   
 
+@keyframes navItemAnimation
+    from
+        transform: translateX(200%)
+
+    to
+        transform: translateX(0)   
+
+.nav-item-animation
+    animation: navItemAnimation 1s both
 
 // HEADER 
 
