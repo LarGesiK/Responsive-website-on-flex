@@ -14,3 +14,9 @@
     background-position: center;
     background-attachment: fixed;
 }
+
+@mixin racingCardStyles {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%)
+}
