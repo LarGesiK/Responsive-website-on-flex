@@ -387,11 +387,11 @@ body {
 }
 
 .racing__card-img--second {
-  background-image: linear-gradient(45deg, rgba(47, 47, 56, 0.75), rgba(0, 0, 0, 0.75)), url(../img/racing2.jpg);
+  background-image: linear-gradient(45deg, rgba(47, 47, 56, 0.75), rgba(0, 0, 0, 0.75)), url(../img/highway.jpg);
 }
 
 .racing__card-img--third {
-  background-image: linear-gradient(45deg, rgba(47, 47, 56, 0.75), rgba(0, 0, 0, 0.75)), url(../img/racing2.jpg);
+  background-image: linear-gradient(45deg, rgba(47, 47, 56, 0.75), rgba(0, 0, 0, 0.75)), url(../img/highcity.jpg);
 }
 
 .racing__card-img-title {
@@ -534,6 +534,20 @@ body {
   .hero-img__text {
     font-size: 2.2rem;
   }
+  .racing__cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .racing__card {
+    margin: 1em;
+    width: 45%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -578,6 +592,12 @@ body {
   .hero-img hr {
     width: 60%;
     max-width: 900px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .racing__card {
+    width: 30%;
   }
 }
 /*# sourceMappingURL=main.css.map */
